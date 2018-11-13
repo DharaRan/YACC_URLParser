@@ -1,11 +1,7 @@
 /*
-  Assignment2: URL Parser
+  Developed: Dhara Rana 
   Due Date: 11/11/18
-  Group CC2: Dhara Rana       djr32
-  	     Aditi Sharma     as3356
-	     Annie Manoharan  ai235
-	     Chih Chang       cc785
-	     Soja Mohamed     sm2583
+    
 */
 
 %{
