@@ -1,0 +1,67 @@
+http://aa.bb.cc/one/three
+output:
+   scheme = http, host: aa.bb.cc, port = null, path = /one/three
+
+http://www.google.com:8080/test/test2
+Output:
+	scheme = http, host: www.google.com, port = 8080, path = /test/test2
+
+http://www.google.com:8080/test/one/two
+output:
+	scheme = http, host: www.google.com, port = 8080, path = /test/one/two
+
+http://www.google.com
+output: 
+	scheme = http, host: www.google.com, port = null, path = null
+
+www.google.com
+otuput:
+	yyerr: error (syntax error)
+	
+http://www.google.com/test/two
+output:
+	scheme = http, host: www.google.com, port = null, path = /test/two
+
+
+http://www.google.com:8080/test/test2.txt
+output:
+	scheme = http, host: www.google.com, port = 8080, path = /test/test2.txt
+
+http://www.google.com:8080/test/test.txt
+output:
+ scheme = http, host = www.google.com, port = 8080, path = /test/test.txt
+	
+http://aa.bb.cc:2020/one/two/three
+output: 
+	scheme = http, host: aa.bb.cc, port = 2020, path = /one/two/three
+
+
+http://aa.bb/one/two
+output:
+	yyerr: error (syntax error)
+
+http://aa.bb.cc
+output:
+	scheme = http, host: aa.bb.cc, port = null, path = null
+
+http://www.google.com/test/test2
+output:
+	scheme = http, host: www.google.com, port = null, path = /test/test2
+
+http://:8080/test/test2
+output:
+	scheme = http, host: null, port = 8080, path = /test/test2
+
+http://www.google.com:8080
+output:
+	scheme = http, host: www.google.com, port = 8080, path = null
+
+http://www.njit.edu/
+
+http://www.njit.edu///
+
+
+
+
+
+
